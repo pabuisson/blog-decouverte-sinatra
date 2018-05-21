@@ -1,0 +1,91 @@
+$footer-background: #eee;
+
+$lighter-grey: #ddd;
+$light-grey: #aaa;
+$mid-grey: #777;
+
+$desaturated-purple: #555b66;
+
+$font-family: "Source Sans Pro", "Helvetica Neue", "Calibri", sans-serif;
+
+// ------------------------------------------------------------------------------------------------
+
+html, body {
+  margin:0;
+  padding:0;
+
+  color: $mid-grey;
+  font-family: $font-family;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#content {
+  margin-bottom: 6rem;
+
+  h1 {
+    color: $desaturated-purple;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  p, pre {
+    font-family: $font-family;
+  }
+
+  #songlist {
+    list-style-type: none;
+    padding: 0;
+
+    li a {
+      display: block;
+      height: 3rem;
+      line-height: 3rem;
+
+      color: $light-grey;
+      font-size: 1.2rem;
+      text-decoration: none;
+
+      &:hover {
+        color: $desaturated-purple;
+      }
+    }
+  }
+
+  a.back {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    opacity:0.2;
+
+    &:hover {
+      opacity:1;
+    }
+  }
+}
+
+footer {
+  width:100%;
+  padding: 1rem;
+
+  position: fixed;
+  bottom: 0;
+
+  background-color: $footer-background;
+  border-top:1px solid $lighter-grey;
+
+  color: $light-grey;
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.5;
+
+  a {
+    color: #99d;
+    text-decoration:none;
+
+    &:hover {
+      color: #669;
+      text-decoration:underline;
+    }
+  }
+}
